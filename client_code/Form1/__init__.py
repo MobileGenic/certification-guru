@@ -1,6 +1,10 @@
 from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.js.window
+import anvil.js
+
+
+
 
 
 
