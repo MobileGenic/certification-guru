@@ -20,6 +20,7 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    anvil.js.window.open("https://www.bing.com/chat", "_parent")
+    (anvil.js.window.open("https://www.bing.com/chat", "_blank").document.activeElement).text='hi'
+    print("hi")
     self.get_components()
     
