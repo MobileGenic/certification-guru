@@ -24,7 +24,10 @@ class Form1(Form1Template):
     w=anvil.js.window.open("https://www.bing.com/chat", "_blank")
     dom = w.document
     ctrl=dom.activeElement
-    ctrl.text='hi james'
+    print(ctrl)
+    print (dom.body.style)
+    
+    
     
     
     
