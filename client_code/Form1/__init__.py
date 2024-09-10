@@ -25,11 +25,7 @@ class Form1(Form1Template):
     dom = w.document
     ctrl=dom.activeElement
     print(ctrl)
-    print (dom.body.style)
-    
-    
-    
-    
-    
-    self.get_components()
-    
+    print (str(dom))
+           
+    ll = self.get_components()
+    print (ll)
