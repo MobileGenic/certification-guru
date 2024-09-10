@@ -16,7 +16,10 @@ class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+        self.iframe = HTMLPanel(html=""
+        <iframe src="https://bing.com/chat" width="100%" height="600px"></iframe>
+        """)
+        self.add_component(self.iframe)
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
