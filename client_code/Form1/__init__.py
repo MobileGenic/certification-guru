@@ -3,7 +3,7 @@ from anvil import *
 import webbrowser
 import anvil.js.window
 import anvil.js
-import pyperclip
+
 
 
 
