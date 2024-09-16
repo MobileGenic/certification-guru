@@ -30,7 +30,10 @@ class Form1(Form1Template):
     w.document.activeElement.text='nice'
     
     fc=w.document.activeElement
+    print(fc.text+"!")
     fc.text="please"
+    w.location.reload()
+    
 
 
 
