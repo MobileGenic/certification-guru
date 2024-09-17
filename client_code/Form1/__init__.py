@@ -25,14 +25,7 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    w =anvil.js.window.open("https://www.bing.com/chat")
-    w.document.write('hello')
-    w.document.activeElement.text='nice'
-    
-    fc=w.document.activeElement
-    print(fc.text+"!")
-    fc.text="please"
-    w.location.reload()
+  w =anvil.js.window.open("https://www.bing.com/chat")
     
 
 
