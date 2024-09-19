@@ -1,8 +1,11 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
 import webbrowser
 import anvil.js.window
 import anvil.js
+
+
 
 
 
@@ -27,6 +30,7 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     w =anvil.js.window.open("https://www.bing.com/chat", "_blank")
     w.document.title='title'
+    print("click me to copy paste")
     
 
     
