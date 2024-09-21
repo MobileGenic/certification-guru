@@ -1,4 +1,6 @@
 import anvil.server
+import pyclip
+
 
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
@@ -8,7 +10,8 @@ import anvil.server
 # Here is an example - you can replace it with your own:
 #
 # @anvil.server.callable
-# def say_hello(name):
+# def sayhello(name):
 #   print("Hello, " + name + "!")
+
 #   return 42
 #

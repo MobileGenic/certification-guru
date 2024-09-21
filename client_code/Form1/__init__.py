@@ -30,7 +30,8 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     w =anvil.js.window.open("https://www.bing.com/chat", "_blank")
     w.document.title='title'
-    print("click me to copy paste")
+    anvil.server.call('sayhello','james')
+    
     
 
     
