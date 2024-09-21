@@ -1,6 +1,7 @@
 import anvil.server
 
 
+
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
 #
@@ -8,8 +9,10 @@ import anvil.server
 # them with @anvil.server.callable.
 # Here is an example - you can replace it with your own:
 #
-# @anvil.server.callable
+@anvil.server.callable
 def sayhello(name):
-  print(f"Hello from the server, {name}")
+  print(f"Hello from the server mr., {name}")
   return [1, 2, 3, 4]
+  #navigator.clipboard.writeText('Boom')
+  
 
