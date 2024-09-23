@@ -27,19 +27,27 @@ class Form1(Form1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
      
-    # Any code you write here will run before the form opens.
+    # Any code you write here will run before the form opens'
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    navigator.clipboard.writeText("Hello World!")
+    #navigator.clipboard.writeText("Hello World!")
 
     w =anvil.js.window.open("https://www.bing.com/chat", "_blank")
-    w.document.title='title'
+    w.document.title='titletest'
+    #w.document.title.innerText
+    w.document.execCommand('copy')
+    print("after copy")
+    
     return_value=anvil.server.call('sayhello','james')
     print(f"the return value was {return_value}")
-    time.sleep(60)
     print("after sleep")
-    navigator.clipboard.writeText('Boom')
+    self.text_box_1.text='What is a cow'
+    self.text_box_1.select()
+    #print(w.document.title)
+
+    
+    #navigator.clipboard.writeText('Boom')
     
     
     
