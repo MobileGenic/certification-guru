@@ -53,9 +53,12 @@ class Form1(Form1Template):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.text_box_1.text='test text'
-    alert("press ok then press and hold the control and C keys at the same time, then click the ask question button")
+    #alert("press ok then press and hold the control and C keys at the same time, then click the ask question button")
     
     self.text_box_1.select()
+    self.label_1.text = "now hold the control + c keys at the same time, then click the 'ask question' button"
+
+    #alert("1press and hold the ctrl and 'c' keys")
     
     
     
