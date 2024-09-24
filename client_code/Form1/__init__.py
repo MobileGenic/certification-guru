@@ -1,6 +1,7 @@
 from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.server
+
 import webbrowser
 import anvil.js.window
 import anvil.js
@@ -51,6 +52,9 @@ class Form1(Form1Template):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
+    self.text_box_1.text='test text'
+    alert("press ok then press and hold the control and C keys at the same time, then click the ask question button")
+    
     self.text_box_1.select()
     
     
