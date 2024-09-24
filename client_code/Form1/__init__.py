@@ -33,7 +33,8 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     #navigator.clipboard.writeText("Hello World!")
-
+    alert("When the new tab appears press and hold the ctrl and 'v' keys. Then press the enter key for the answer.")
+    alert("After receiving the response close the new browser tab to return here.")
     w =anvil.js.window.open("https://www.bing.com/chat", "_blank")
     w.document.title='titletest'
     #w.document.title.innerText
@@ -52,7 +53,7 @@ class Form1(Form1Template):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.text_box_1.text='test text'
+    self.text_box_1.text='how old is the star trek tv series'
     #alert("press ok then press and hold the control and C keys at the same time, then click the ask question button")
     
     self.text_box_1.select()
