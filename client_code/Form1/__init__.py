@@ -60,6 +60,12 @@ class Form1(Form1Template):
     self.label_1.text = "now hold the control + c keys at the same time, then click the 'ask question' button"
 
     #alert("1press and hold the ctrl and 'c' keys")
+
+  def timer_1_tick(self, **event_args):
+    """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
+    if self.label_1.text == 'flash':
+     self.label_1.text = 'clear'
+  
     
     
     
