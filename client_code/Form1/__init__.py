@@ -24,6 +24,8 @@ import time
 
 
 class Form1(Form1Template):
+  tx='this is the sentence to show word by word'
+  ndx = 0
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -65,6 +67,17 @@ class Form1(Form1Template):
     """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
     if self.label_1.text == 'flash':
      self.label_1.text = 'clear'
+    else:
+      self.label_1.text = 'flash'
+    ndx+=1
+    if ndx==10:
+      ndx = 0
+      
+      
+      
+    
+      
+      
   
     
     
