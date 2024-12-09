@@ -1,7 +1,8 @@
 allow_embedding: false
 dependencies: []
-name: M3 App 1
-package_name: M3_App_1
+metadata: {description: Study Application for Any certification exam, title: Certification Guru}
+name: Certification Guru
+package_name: Certification_Guru
 renamed: true
 runtime_options:
   client_version: '3'
