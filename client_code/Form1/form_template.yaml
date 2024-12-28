@@ -5,9 +5,13 @@ components:
     name: timer_1
     properties: {interval: 0.025}
     type: Timer
+  - layout_properties: {grid_position: 'FROBBM,AAPWZY'}
+    name: label_2
+    properties: {align: center, icon_align: top, role: title, text: cert guru}
+    type: Label
   - layout_properties: {grid_position: 'MSGIGF,EJJKDP'}
     name: label_1
-    properties: {align: center, bold: true, border: '', font_size: 16, role: null, text: text here}
+    properties: {align: center, bold: true, border: '', font_size: 26, role: display, text: text here, visible: true}
     type: Label
   - event_bindings: {click: button_2_click}
     layout_properties: {grid_position: 'ZYFUWN,VFMJQG'}
