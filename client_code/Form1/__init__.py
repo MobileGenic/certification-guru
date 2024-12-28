@@ -70,7 +70,7 @@ class Form1(Form1Template):
      self.label_1.text = 'clear'
     else:
       self.label_1.text = 'flash'
-    ndx+=1
+    ndx=1
     if ndx==10:
       ndx = 0
       
