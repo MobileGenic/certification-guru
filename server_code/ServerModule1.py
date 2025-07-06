@@ -1,5 +1,5 @@
 import anvil.server
-
+import requests
 
 
 # This is a server module. It runs on the Anvil server,
@@ -7,16 +7,13 @@ import anvil.server
 #
 # To allow anvil.server.call() to call functions here, we mark
 # them with @anvil.server.callable.
-# Here is an example - you can replace it with your own:
-#
 @anvil.server.callable
-def sayhello(name):
-  print(f"Hello from the server mr., {name}")
-  return [1, 2, 3, 4]
-  #navigator.clipboard.writeText('Boom')
-@anvil.server.callable
-def promptdeepseek(prompt):
-  promptdeepseek(prompt)
+def query_ollama(prompt):
+  response = requests.post(
+    "http://localhost:11434/api/generate",
+    json={"model": "llama3", "prompt": prompt}
+  )
+  return response.json()["response"]
   
   
   
