@@ -14,9 +14,10 @@ def sayhello(name):
   print(f"Hello from the server mr., {name}")
   return [1, 2, 3, 4]
   #navigator.clipboard.writeText('Boom')
-  @anvil.server.callable
+@anvil.server.callable
 def promptdeepseek(prompt):
-  print(f"Hello from the server mr., {name}")
+  
+  
   
   
 
