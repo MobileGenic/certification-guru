@@ -16,6 +16,7 @@ def sayhello(name):
   #navigator.clipboard.writeText('Boom')
 @anvil.server.callable
 def promptdeepseek(prompt):
+  promptdeepseek(prompt)
   
   
   
