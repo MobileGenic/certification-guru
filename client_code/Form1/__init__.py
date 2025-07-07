@@ -73,6 +73,11 @@ class Form1(Form1Template):
     ndx=1
     if ndx==10:
       ndx = 0
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+  
+result = anvil.server.call('query_ollama', "What's the weather like in Tokyo?")
       
       
       
