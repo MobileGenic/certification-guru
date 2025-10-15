@@ -19,6 +19,11 @@ class Form2(Form2Template):
     try:
       self.run_button.enabled = False
       self.run_button.text = "Running..."
+
+      # Call your local Uplink function (no HTTP in the client — and no bridge)
+      reply = anvil.server.call("ollama_generate", prompt, model="llama3.2:1b")
+      self.output_box.text = reply
+      
     finally:
         self.run_button.enabled = True
-        self.run_button.text = "Run"
+        self.run_button.text = "Run Again"
