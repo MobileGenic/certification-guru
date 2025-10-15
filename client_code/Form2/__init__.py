@@ -21,7 +21,7 @@ class Form2(Form2Template):
       self.run_button.text = "Running..."
 
       # Call your local Uplink function (no HTTP in the client — and no bridge)
-      reply = anvil.server.call("ollama_generate", prompt, model="llama3.2:1b")
+      reply = anvil.server.call("ollama_generate", prompt, model="deepseek-r1:32b")
       self.output_box.text = reply
       
     finally:
