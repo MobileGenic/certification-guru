@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'OLUQKJ,XHBYEX'}
+  name: label_1
+  properties: {text: AI}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true
