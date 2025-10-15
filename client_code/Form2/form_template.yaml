@@ -1,7 +1,18 @@
 components:
-- layout_properties: {grid_position: 'OLUQKJ,XHBYEX'}
-  name: label_1
-  properties: {text: AI}
-  type: Label
+- layout_properties: {grid_position: 'CLWPBY,LAHSAC'}
+  name: prompt_box
+  properties: {text: prompt box}
+  type: TextBox
+- event_bindings: {click: run_button_click}
+  layout_properties: {grid_position: 'MIQDVQ,DXLTHI'}
+  name: run_button
+  properties:
+    text: |
+      Run
+  type: Button
+- layout_properties: {grid_position: 'OFGZVA,DATAVI'}
+  name: output_box
+  properties: {text: result}
+  type: TextArea
 container: {type: ColumnPanel}
 is_package: true
